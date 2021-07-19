@@ -1,0 +1,119 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: sans-serif;
+  margin: 2em 1em;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-style: italic;
+  color: #373fff;
+  max-width: calc(100% - 5rem);
+  line-height: 1.1;
+}
+
+form {
+  background-color: #eee;
+  display: grid;
+  grid-gap: 1em;
+  padding: 1em;
+  max-width: 50ch;
+  width: 95%;
+}
+/*form button {
+  background-color: #bbbbf2;
+
+  border: 2px solid currentColor;
+  border-radius: 0.25em;
+  text-align: center;
+  cursor: pointer;
+  font-size: inherit;
+  line-height: 1.4em;
+  padding: 0.25em 1em;
+  max-width: 20ch;
+}*/
+
+video {
+  display: block;
+}
+
+section {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+.camView {
+  position: relative;
+  float: left;
+  width: calc(100% - 20px);
+  margin: 10px;
+  cursor: pointer;
+}
+
+.camView p {
+  position: absolute;
+  padding: 5px;
+  background-color: rgba(255, 111, 0, 0.85);
+  color: #FFF;
+  border: 1px dashed rgba(255, 255, 255, 0.7);
+  z-index: 2;
+  font-size: 12px;
+}
+
+
+.highlighter {
+  background: rgba(0, 255, 0, 0.25);
+  border: 1px dashed #fff;
+  z-index: 1;
+  position: absolute;
+}
+
+.removed {
+  display: none;
+}
+
+.invisible {
+  opacity: 0.2;
+}
+button {
+  font-size: 18px;
+  font-weight: 200;
+  padding: 1em;
+  width: 200px;
+  border: 2px solid currentColor;
+  border-radius: 4px;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+  background-color: #bbbbf2;
+  margin-bottom: 4em;
+}
+
+form button:hover {
+  background-color: lavender;
+  text-align: center;
+}
+
+button:focus {
+  background: #bbbbf2;
+  color: #fff;
+}
+
+footer {
+  margin-top: 3em;
+  padding-top: 1.5em;
+  border-top: 1px solid lightgrey;
+  text-align: center;
+}
+
+/* the body with id #index is only on our index.html page */
+body#index {
+  text-align: left;
+  margin: 9em;
+  background-color: white;
+}
+#index main {
+  padding: 5em;
+}

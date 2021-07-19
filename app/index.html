@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Ocular Vision Test</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="assets/js/script.js" defer></script>
+
+    <!-- import Chart.js library via CDN, per Chart.js documentation -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"
+      defer
+    ></script>
+  </head>
+
+  <body id="index">
+    <h1>Ocular Vision Test</h1>
+
+    <h2>
+      Take an at-home eye exam yourself if you can't make it to the optometrist
+      during the pandemic or just want to see how good your vision is.
+    </h2>
+    There are two modes for testing your vision based on your needs: We have a
+    mode for audio-reponse users and for nonverbal/deaf users.
+    <h3>
+      Instructions to use our test:
+    </h3>
+    <p>
+      When shown a line of letters in the alphabet:
+    </p>
+    <p>
+      - Audio response users will speak the letter which they see on the screen
+    </p>
+
+    <p>
+      - Non-verbal/deaf users can show their webcam the American Sign Language
+      hand gesture that corresponds to the letter they see on screen.
+    </p>
+
+    <p>
+      Note: Please make sure your
+      <strong>webcam/audio settings are enabled</strong> before taking your
+      vision test.
+    </p>
+
+    <p>
+      OVT's score predictor is not a valid medical diagnosis and you should
+      refer to your primary care physician or an optometrist for a licensed
+      score.
+      <a
+        href="https://www.google.com/search?q=optometrists+near+me&oq=optometrists&aqs=chrome.1.69i57j0i433i457j0i402j0j0i395l3j69i60.12881j1j7&sourceid=chrome&ie=UTF-8"
+        >Find An Optometrist</a
+      >
+    </p>
+
+    <form>
+      <label>
+        Please enter your reason for testing vision online
+        <input
+          name="testing_reason"
+          type="text"
+          maxlength="100"
+          required
+          placeholder="Pandemic, saving money, etc"
+        />
+      </label>
+      <button type="submit" id="submit-testing_reason">Submit</button>
+    </form>
+
+    <section class="visualization">
+      <ul id="data_visualization">
+        <em>loading visualization&hellip;</em>
+      </ul>
+    </section>
+
+    <form>
+      <button type="start" id="start_button">
+        <a href="choose-mode.html">Test Your Vision Now</a>
+      </button>
+    </form>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+  <footer>
+    Copyright 2021 by CookieJar. All Rights Reserved.
+  </footer>
+</html>

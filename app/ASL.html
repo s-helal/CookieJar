@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ASL Vision Test</title>
+
+    <!-- here is where we import our CSS file -->
+    <link rel="stylesheet" href="assets/css/choose-mode.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <script src="assets/js/asl.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
+  </head>
+
+  <body>
+    <nav>
+      <a href="/">Click to return to main page</a>
+    </nav>
+
+    <h1>ASL-Vision-Tester</h1>
+
+    <main>
+      <h2>
+        Welcome to the Ocular Vision Acuity Test for ASL Users
+      </h2>
+
+      <p>
+        <img
+          src="data:image/png;base64,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"
+        />
+      </p>
+      <p>
+        Before you begin, please
+        <strong> make sure your webcam is on </strong> and
+        <strong> stand 3 ft away from the screen</strong> for a more accurate
+        vision score.
+      </p>
+      <p>
+        Place your device on a level surface where the chart on the screen is
+        directly in your line of vision.
+      </p>
+      <p>
+        Close one eye and cover it with your palm. Your other eye will be tested
+        for visual acuity.
+      </p>
+      <p>
+        When you start the test, you must slowly sign the letters that you see
+        in clear view of the webcam, as in the example image below:
+        <img
+          src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/850/061/datas/gallery.jpg"
+        />
+      </p>
+      <p>
+        Once you have finished testing that eye, you may switch eyes and repeat
+        the test again for the other eye.
+      </p>
+      <p>
+        <img
+          src="https://cdn.glitch.com/b2e8793d-4a3b-4bd4-9f1a-1cf126eeac9a%2Fthumbnails%2F1200px-Snellen_chart.svg.png?1610835908478"
+        />
+      </p>
+      <p>
+        Click the button "Start Test" below to begin your visual acuity test.
+      </p>
+
+      <p>
+        When you are finished, sign "S" or click "Submit Test"
+      </p>
+
+      <button id="button">Start Test</button>
+
+      <p>
+        <label> Your visual acuity score is: 20/20 </label>
+      </p>
+
+      <!-- 
+      <video
+        id="stream"
+        width="640"
+        height="480"
+        src="http://localhost:8080/stream"
+        type="video/ogg; codecs=theora"
+        autoplay="autoplay"
+      />
+      -->
+
+      <h1>
+        Multiple object detection using pre trained model in TensorFlow.js
+      </h1>
+
+      <p>
+        Wait for the model to load before clicking the button to enable the
+        webcam - at which point it will become visible to use.
+      </p>
+
+      <section id="demos" class="invisible">
+        <p>
+          When ready click "enable webcam" below and accept
+          access to the webcam when the browser asks (check the top left of your
+          window)
+        </p>
+
+        <div id="liveView" class="camView">
+          <button id="webcamButton">Enable Webcam</button>
+          <video id="webcam" autoplay width="640" height="480"></video>
+        </div>
+      </section>
+
+      <!-- Import TensorFlow.js library -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"
+        type="text/javascript"
+      ></script>
+      <!-- Load the coco-ssd model to use to recognize things in images -->
+      <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+
+      <!-- Import the page's JavaScript to do some stuff -->
+      <script src="assets/js/script.js" defer></script>
+    </main>
+
+    <footer>
+      Copyright 2021 by CookieJar. All Rights Reserved.
+    </footer>
+  </body>
+</html>

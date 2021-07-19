@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Audio Response Vision Test</title>
+
+    <!-- here is where we import our CSS file -->
+    <link rel="stylesheet" href="assets/css/speech-text.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="assets/js/speech-text.js" defer></script>
+  </head>
+
+  <body>
+    <nav>
+      <a href="/">Click to return to main page</a>
+    </nav>
+
+    <h1>Audio Response Vision Test</h1>
+
+    <main>
+      <p>
+        Welcome to the Ocular Vision Acuity Test for Audio-Response Users (can
+        listen and respond verbally to commands)
+      </p>
+      <p>
+        Before you begin, please
+        <strong> stand 3 ft away from the screen</strong> for a more accurate
+        vision score
+      </p>
+      <p>
+        Place your device on a level surface where the chart on the screen is
+        directly in your line of vision.
+      </p>
+
+      <p>
+        <img
+          src="https://cdn.glitch.com/b2e8793d-4a3b-4bd4-9f1a-1cf126eeac9a%2Fthumbnails%2F1200px-Snellen_chart.svg.png?1610835908478"
+        />
+      </p>
+      <p>
+        Close one eye and cover it with your palm. Your other eye will be tested
+        for visual acuity.
+      </p>
+      <p>
+        Once you have finished testing that eye, you may switch eyes and repeat
+        the test again for the other eye.
+      </p>
+      <p>
+        Click the button "Start Listening" below to begin speaking the letters
+        you can see on the screen.
+      </p>
+
+      <p>
+        When you are finished, say "Stop" or click "Stop Listening"
+      </p>
+      <button id="button">Start listening</button>
+      <div id="result"></div>
+      <p id="message" hidden aria-hidden="true">
+        Your browser doesn't support Speech Recognition. Sorry.
+      </p>
+      
+      <p>
+        <label> Your visual acuity score is: 20/20 </label>
+      </p>
+    </main>
+  </body>
+
+  <footer>
+    Copyright 2021 by CookieJar. All Rights Reserved.
+  </footer>
+</html>
