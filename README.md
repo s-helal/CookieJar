@@ -1,4 +1,4 @@
-# HackDavis2021
+# HackDavis2021: CookieJar Vision
 Project in collaboration with Radhika Kulkarni, Karan Pathania, and Brandon Aranzamendez.
 
 Contains sign language classification model for website to administer an at-home eye exam.
